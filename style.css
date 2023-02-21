@@ -11,8 +11,7 @@ ul {
   }
 
   .hov{
-    border: 1px solid #80808026;
-    padding: 6px 20px;
+    color:black;
   }
    @media screen and (max-width:500px) {
     .test{
