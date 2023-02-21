@@ -1,0 +1,118 @@
+.hidden{
+  display: none;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  justify-content: center;
+  list-style: none;
+  }
+
+  .hov{
+    border: 1px solid #80808026;
+    padding: 6px 20px;
+  }
+   @media screen and (max-width:500px) {
+    .test{
+      width: 100%;
+      text-align: center;
+      border: none;
+      }
+
+    ul{
+      text-align: center;
+    }
+    #show2{
+      width: 65%;
+      margin-left: 68px;
+  
+    }
+    #show{
+      width: 65%;
+       margin-left: 68px;
+    }
+  } 
+  ul li {
+    list-style-type: none;
+    /*relative positioning for list items along with overflow hidden to contain the overflowing ripple*/
+    position: relative;
+    overflow: hidden;
+  }
+  ul li a {
+    font: normal 14px/28px Montserrat; color: hsl(180, 40%, 40%);
+    display: block; padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer; /*since the links are dummy without href values*/
+    /*prevent text selection*/
+    user-select: none;
+    /*static positioned elements appear behind absolutely positioned siblings(.ink in this case) hence we will make the links relatively positioned to bring them above .ink*/
+    position: relative;
+  }
+  .disaply{
+    display: flex;
+    justify-content: space-between;
+  }
+  .disaply a{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    overflow: hidden;
+
+  }
+  .test li{
+    BORDER: 1PX SOLID #1c161626;
+
+
+  }
+  /*.ink styles - the elements which will create the ripple effect. The size and position of these elements will be set by the JS code. Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.*/
+  .ink {
+    display: block; position: absolute;
+    background: hsl(180, 40%, 80%);
+    border-radius: 100%;
+    transform: scale(0);
+  }
+  /*animation effect*/
+  .ink.animate {animation: ripple 0.65s linear;}
+  @keyframes ripple {
+    /*scale the element to 250% to safely cover the entire link and fade it out*/
+    100% {opacity: 0; transform: scale(2.5);}
+  }
+
+  .listing{
+display: none;
+
+  }
+  .list2{
+display: none;
+
+  }
+  .list3{
+display: none;
+
+  }
+
+
+  .desing {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+ 
+
+  @media screen and (max-width:500px){
+
+    .nav{
+      display: flex;
+      flex-direction: column;
+    }
+    .desing{
+      display: flex;
+      flex-direction: column;
+    }
+
+    
+
+    
+  }
