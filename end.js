@@ -100,7 +100,7 @@ setTimeout(() => {
  
 }
 
-
+// date();
 
 setInterval(() => {
 date();
